@@ -1,0 +1,17 @@
+{
+  "name": "tomatotimer",
+  "version": "1.0.0",
+  "description": "Simple tomato timer",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Vince Tran",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^6.0.12"
+  },
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
+}

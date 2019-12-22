@@ -1,0 +1,171 @@
+body {
+  background-color: #d2fcd4;
+  overflow: hidden;
+  padding: 0.5% 0.5% 0.5% 0.5%;
+  font-family: "Arial Narrow Bold", sans-serif;
+  font-weight: 900;
+}
+
+#titleBanner {
+  display: flex;
+  flex-direction: row;
+  background-color: #bd9b77;
+  min-width: 535px;
+  min-height: 140px;
+  border-radius: 20px;
+  border: 3px solid black;
+}
+
+#titleDisplay {
+  flex: 2;
+  align-self: center;
+  padding-left: 5%;
+  color: white;
+  font-size: 36pt;
+}
+
+#tomatoCounter {
+  flex: 1;
+  margin-right: 5px;
+  display: flex;
+  padding: 5px 5px;
+}
+
+#counterRowOne {
+  flex: 1;
+  display: flex;
+  flex-flow: column;
+}
+
+#counterRowTwo {
+  flex: 1;
+  display: flex;
+  flex-flow: column;
+}
+
+#counterOne {
+  background-image: url("../assets/img/counterReady.png");
+  background-repeat: no-repeat;
+  margin-left: 10px;
+  flex: 1;
+}
+
+#counterTwo {
+  background-image: url("../assets/img/counterWaiting.png");
+  background-repeat: no-repeat;
+  margin-left: 10px;
+  flex: 1;
+}
+
+#counterThree {
+  background-image: url("../assets/img/counterWaiting.png");
+  background-repeat: no-repeat;
+  margin-left: 10px;
+  flex: 1;
+}
+
+#counterFour {
+  background-image: url("../assets/img/counterWaiting.png");
+  background-repeat: no-repeat;
+  margin-left: 10px;
+  flex: 1;
+}
+#mainBody-Full {
+  display: flex;
+  flex-direction: row;
+  min-width: 535px;
+  min-height: 350px;
+  margin-top: 5px;
+}
+
+#mainTimer {
+  flex: 1.5;
+
+  display: flex;
+  flex-direction: column;
+
+  color: white;
+  background-color: #bd9b77;
+  border-radius: 20px;
+  border: 3px solid black;
+  margin-right: 5px;
+}
+
+#timerDisplay {
+  flex: 1;
+  background-color: #ffffff;
+  margin-top: 5px;
+  color: black;
+}
+
+#startButton {
+  flex: 1;
+  background-color: #6e9c64;
+}
+
+#startButton:hover {
+  background-color: #8ab881;
+}
+
+#breakButton {
+  flex: 1;
+  background-color: #eb8f8f;
+}
+
+#breakButton:hover {
+  background-color: #f0b1b1;
+}
+
+#stopButton {
+  flex: 1;
+  background-color: #b35959;
+}
+
+#stopButton:hover {
+  background-color: #b37272;
+}
+
+#mainSprites {
+  flex: 1;
+
+  display: flex;
+  flex-flow: column;
+}
+
+.mainButton {
+  border-radius: 20px;
+  text-align: center;
+  line-height: 85px;
+  border: 3px solid black;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 36px;
+  -webkit-user-select: none;
+}
+
+#spriteMessage {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 80px;
+  border: 3px solid black;
+  flex: 1;
+  overflow: hidden;
+}
+
+#messageText {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  width: 100%;
+  text-align: center;
+}
+
+#spriteDisplay {
+  flex: 1.5;
+  margin-left: 50px;
+  margin-top: 5px;
+  background-image: url("../assets/img/tomatoBase.png");
+  background-repeat: no-repeat;
+}
