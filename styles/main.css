@@ -44,7 +44,7 @@ body {
 }
 
 #counterOne {
-  background-image: url("../assets/img/counterReady.png");
+  background-image: url("../assets/img/counterWaiting.png");
   background-repeat: no-repeat;
   margin-left: 10px;
   flex: 1;
@@ -70,6 +70,7 @@ body {
   margin-left: 10px;
   flex: 1;
 }
+
 #mainBody-Full {
   display: flex;
   flex-direction: row;
