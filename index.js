@@ -1,5 +1,10 @@
 const electron = require("electron");
-const { app, BrowserWindow, Menu, ipcMain } = electron;
+const {
+  app,
+  BrowserWindow,
+  Menu,
+  ipcMain
+} = electron;
 
 let mainWindow;
 
@@ -9,8 +14,9 @@ app.on("ready", () => {
   mainWindow = new BrowserWindow({
     width: 600,
     height: 620,
-    resizable: false,
-    webPreferences: { nodeIntegration: true }
+    webPreferences: {
+      nodeIntegration: true
+    }
   });
 
   //Load index.html into window
@@ -22,8 +28,38 @@ app.on("ready", () => {
   });
 
   //Reserve for setting main menu
+  const mainMenu = Menu.buildFromTemplate(mainMenuTemplate);
+
+  Menu.setApplicationMenu(mainMenu);
 }); //End of launch function
 
 //Reserve space for menu creation
+const mainMenuTemplate = [{
+  label: "Instructions",
+  click() {
+    createInstructionsWindow();
+  }
+}, {
+  label: "Quit",
+  accelerator: process.platform == "darwin" ? "Command+Q" : "Ctrl+Q",
+  click() {
+    app.quit();
+  }
+}]
 
-//Reserve space for event listeners
+function createInstructionsWindow() {
+  //Create New Window
+  instructionsWindow = new BrowserWindow({
+    width: 400,
+    height: 500,
+    title: "Instructions"
+  });
+
+  //Load HTML into Window
+  instructionsWindow.loadFile("src/instructions.html")
+
+  //Garbage Collection Handle
+  instructionsWindow.on("closed", function () {
+    addWindow = null;
+  });
+}

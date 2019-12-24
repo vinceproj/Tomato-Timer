@@ -149,7 +149,7 @@ body {
   display: flex;
   align-items: center;
   background-color: #ffffff;
-  border-radius: 80px;
+  border-radius: 60px;
   border: 3px solid black;
   flex: 1;
   overflow: hidden;
@@ -169,4 +169,18 @@ body {
   margin-top: 5px;
   background-image: url("../assets/img/tomatoBase.png");
   background-repeat: no-repeat;
+}
+
+p {
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+li {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#openMessage {
+  text-align: center;
 }
