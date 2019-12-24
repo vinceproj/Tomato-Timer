@@ -51,7 +51,7 @@ function createInstructionsWindow() {
   //Create New Window
   instructionsWindow = new BrowserWindow({
     width: 400,
-    height: 500,
+    height: 650,
     title: "Instructions"
   });
 

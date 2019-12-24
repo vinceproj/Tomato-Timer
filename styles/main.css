@@ -2,7 +2,7 @@ body {
   background-color: #d2fcd4;
   overflow: hidden;
   padding: 0.5% 0.5% 0.5% 0.5%;
-  font-family: "Arial Narrow Bold", sans-serif;
+  font-family: "Arial", sans-serif;
   font-weight: 900;
 }
 
@@ -14,6 +14,7 @@ body {
   min-height: 140px;
   border-radius: 20px;
   border: 3px solid black;
+  -webkit-text-stroke: black 2px;
 }
 
 #titleDisplay {
@@ -21,7 +22,7 @@ body {
   align-self: center;
   padding-left: 5%;
   color: white;
-  font-size: 36pt;
+  font-size: 48px;
 }
 
 #tomatoCounter {
@@ -90,6 +91,7 @@ body {
   border-radius: 20px;
   border: 3px solid black;
   margin-right: 5px;
+  -webkit-text-stroke: black 2px;
 }
 
 #timerDisplay {
@@ -97,6 +99,7 @@ body {
   background-color: #ffffff;
   margin-top: 5px;
   color: black;
+  -webkit-text-stroke: black 0px;
 }
 
 #startButton {
@@ -153,6 +156,9 @@ body {
   border: 3px solid black;
   flex: 1;
   overflow: hidden;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 20px;
 }
 
 #messageText {
@@ -173,14 +179,17 @@ body {
 
 p {
   margin-left: 20px;
-  font-size: 16px;
 }
 
 li {
   padding-left: 10px;
   padding-right: 10px;
+  -webkit-text-stroke: black 1.5px;
+  font-size: 22px;
 }
 
 #openMessage {
   text-align: center;
+  -webkit-text-stroke: black 1.5px;
+  font-size: 28px;
 }
